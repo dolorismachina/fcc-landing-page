@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Courses landing page. -->
+
+<body>
+    <header id="header">
+        <img height="75" id="header-img" src="https://goo.gl/wMv1Vr" alt="logo" title="Education for masses" />
+        <h1 id="header-title">EduHub</h1>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#offer">Offer</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#testimony">Testimony</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+
+        <section id="intro" class="section">
+            <h2 class="company-name">EduHub<p>Get Smart!</p></h2>
+            
+            <div class="section-content">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" name="email" id="email" placeholder="Your email">
+                    <input type="submit" id="submit" value="Sign Up">
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="offer">
+            <h2>What we offer</h2>
+            <div class="section-content offer-flex">
+                <div class="offer-flex-cell-1">
+                    <div id="video-container">
+                        <iframe id="video" width="560" height="315" src="https://goo.gl/xiar94" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="offer-flex-cell-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptate sunt molestias earum
+                    tempore assumenda quaerat dolore facilis sed adipisci tenetur laborum? Saepe suscipit perspiciatis
+                    ipsa assumenda, beatae rem! Asperiores.
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="pricing">
+            <h2>Our Packages</h2>
+            <div class="section-content" id="packages">
+                <div class="package-box">
+                    <div class="package-name">
+                        BASIC
+                    </div>
+                    <div class="package-offer">
+                        <ul>
+                            <li>Perk #1</li>
+                            <li>Perk #2</li>
+                            <li>Perk #3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="package-box">
+                    <div class="package-name">
+                        PREMIUM
+                    </div>
+                    <div class="package-offer">
+                        <ul>
+                            <li>Perk #1</li>
+                            <li>Perk #2</li>
+                            <li>Perk #3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="package-box">
+                    <div class="package-name">
+                        STANDARD
+                    </div>
+                    <div class="package-offer">
+                        <ul>
+                            <li>Perk #1</li>
+                            <li>Perk #2</li>
+                            <li>Perk #3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="testimony">
+            <h2>What our students say</h2>
+            <div class="section-content" id="students">
+                <div class="student-box">
+                    <img src="https://goo.gl/g7HzM1" />
+                    <p class="quote">"I like this"</p>
+                </div>
+                <div class="student-box">
+                    <img src="https://goo.gl/fLp65M" />
+                    <p class="quote">"Simply the best"</p>
+                </div>
+                <div class="student-box">
+                    <img src="https://goo.gl/9GZF4R" />
+                    <p class="quote">"Highly recommended"</p>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    <footer id="footer">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Legal</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </footer>
+    <script>
+        window.addEventListener('scroll', (e) => {
+            console.log(e.pageY);
+            if (e.pageY >= 200) {
+                document.getElementById('header').style.display = 'none';
+            }
+            else {
+                document.getElementById('header').style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+
+</html>
